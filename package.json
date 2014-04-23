@@ -1,0 +1,22 @@
+{
+  "name": "button",
+  "version": "0.0.1",
+  "description": "Default button styles",
+  "repository": "https://github.com/shoelace-ui/button.git",
+  "keywords": [
+    "stylus",
+    "shoelace",
+    "buttons",
+    "button"
+  ],
+  "author": "Michael Andrew Vanasse <mail@mndvns.com>",
+  "contributors": [],
+  "devDependencies": {
+    "serve": "^1.4.0",
+    "stylus": "^0.44.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tab-focus": "git://github.com/shoelace-ui/tab-focus"
+  }
+}

@@ -1,0 +1,86 @@
+/**
+* Module dependencies
+*/
+
+@require './variables'
+
+/**
+ * Generic `button` styles.
+ */
+
+$$button-generic
+  display inline-block
+  margin-bottom 0
+  padding $button-padding-vertical $button-padding-horizontal
+  font-family $button-font-family
+  font-size $button-font-size
+  font-weight $button-font-weight
+  line-height $button-height-base
+  border-radius $button-border-radius
+  text-align center
+  text-decoration none
+  vertical-align middle
+  cursor pointer
+  white-space nowrap
+  user-select none
+
+  tab-focus()
+
+  &.hover
+  &:hover
+  &:focus
+    text-decoration none
+
+  &.active
+  &:active
+    outline 0
+    background-image none
+    box-shadow inset 0 3px 5px rgba(0,0,0,.125)
+
+  &.disabled
+  &[disabled]
+  fieldset[disabled] &
+    cursor not-allowed
+    pointer-events none // future-proof disabling of clicks
+    opacity .65
+    box-shadow none
+
+/**
+ * Mixin for creating `button` rules.
+ *
+ * @param {String} name
+ * @param {Color} text-color
+ * @param {Color} bg-color
+ * @param {Color} border-color
+ * @type mixin
+ * @api public
+ */
+
+--button-constructor(name, text-color, bg-color, border-color)
+  .{$button-selector-prefix}-{name}
+    background bg-color
+    color text-color
+    border 1px solid border-color
+
+    &.hover
+    &:hover
+    &:focus
+      color text-color
+
+/**
+ * Function to apply `button` default styles.
+ *
+ * @type function
+ * @api public
+ */
+
+--button-apply-defaults()
+
+  [class^={$button-selector-prefix}]
+    @extend $$button-generic
+
+  --button-constructor('default', #555, white, #888)
+  --button-constructor('primary', white, blue, darkBlue)
+  --button-constructor('warning', white, orange, red)
+  --button-constructor('danger', white, red, darkRed)
+  --button-constructor('success', white, green, darkGreen)
