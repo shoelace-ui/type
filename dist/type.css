@@ -13,9 +13,13 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  c  [90mcompiled[0m type.css
-  [90mwatching[0m type.styl
- small,
+  color: inherit;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
 h6 small,
 .h1 small,
 .h2 small,
@@ -37,7 +41,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: $headings-small-color;
+  color: #999;
 }
 h1,
 .h1,
@@ -86,17 +90,29 @@ h6 .small,
   font-size: 75%;
 }
 h1,
-.h1 font-size: $font-size-h1,
+.h1 {
+  font-size: 36px;
+}
 h2,
-.h2 font-size: $font-size-h2,
+.h2 {
+  font-size: 30px;
+}
 h3,
-.h3 font-size: $font-size-h3,
+.h3 {
+  font-size: 24px;
+}
 h4,
-.h4 font-size: $font-size-h4,
+.h4 {
+  font-size: 18px;
+}
 h5,
-.h5 font-size: $font-size-h5,
+.h5 {
+  font-size: 14px;
+}
 h6,
-.h6 font-size: $font-size-h6,
+.h6 {
+  font-size: 12px;
+}
 p {
   margin: 0 0 10px;
 }
@@ -106,20 +122,23 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
-@media $media-min-tablet {
-  .lead {
-    font-size: 21px;
-  }
-}
 small,
 .small font-size: 85%,
 cite font-style: normal,
-.text-left text-align: left,
-.text-right text-align: right,
-.text-center text-align: center,
-.text-justify text-align: justify,
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
 .text-muted {
-  color: $text-muted;
+  color: #999;
 }
 .bg-primary {
   color: #fff;
@@ -127,7 +146,7 @@ cite font-style: normal,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid $page-header-border-color;
+  border-bottom: 1px solid #eee;
 }
 ul,
 ol {
@@ -170,7 +189,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted $abbr-border-color;
+  border-bottom: 1px dotted #999;
 }
 .initialism {
   font-size: 90%;
@@ -180,7 +199,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid $blockquote-border-color;
+  border-left: 5px solid #eee;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -193,7 +212,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.428571429;
-  color: $blockquote-small-color;
+  color: #999;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -204,7 +223,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid $blockquote-border-color;
+  border-right: 5px solid #eee;
   border-left: 0;
   text-align: right;
 }
@@ -231,3 +250,4 @@ address {
   font-style: normal;
   line-height: 1.428571429;
 }
+
