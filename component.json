@@ -1,14 +1,15 @@
 {
-  "name": "button",
-  "repo": "shoelace-ui/button",
-  "description": "Default button styles",
+  "name": "type",
+  "repo": "shoelace-ui/type",
+  "description": "Default typography styles",
   "version": "0.0.1",
   "keywords": [
     "shoelace",
-    "buttons",
-    "button"
+    "type",
+    "typography",
+    "fonts"
   ],
-  "styles": ["dist/button.css"],
+  "styles": ["dist/type.css"],
   "dependencies": {},
   "development": {},
   "license": "MIT"

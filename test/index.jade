@@ -4,38 +4,16 @@ html
     style
       :stylus
         @require '../index.styl'
-        --button-apply-defaults()
-        section
-          display inline-block
-          margin-top 20px
-          width 100%
-          > div
-            margin-left 20px
-            border-left 1px solid #ccc
-            padding-left 20px
-            width 200px
-            float left
-            text-align center
-            &:first-child
-              border none
 
   body
-    mixin button(prefix, name)
-      section
-        div: div(class="#{prefix}-#{name}") div.#{prefix}-#{name}
-        div: div(class="#{prefix}-#{name} hover") div.#{prefix}-#{name}.hover
-        div: div(class="#{prefix}-#{name} active") div.#{prefix}-#{name}.active
-      section
-        div: a(class="#{prefix}-#{name}") a.#{prefix}-#{name}
-        div: a(class="#{prefix}-#{name} hover") a.#{prefix}-#{name}.hover
-        div: a(class="#{prefix}-#{name} active") a.#{prefix}-#{name}.active
-      section
-        div: button(class="#{prefix}-#{name}") button.#{prefix}-#{name}
-        div: button(class="#{prefix}-#{name} hover") button.#{prefix}-#{name}.hover
-        div: button(class="#{prefix}-#{name} active") button.#{prefix}-#{name}.active
-
-    +button("btn", "default")
-    +button("btn", "primary")
-    +button("btn", "warning")
-    +button("btn", "danger")
-    +button("btn", "success")
+    header
+      h1 test headerh1
+      h2 test headerh2
+      h3 test headerh3
+      h4 test headerh4
+      h5 test headerh5
+      h6 test headerh6
+      p test header p
+    section
+      h1 test section h1
+        section test section section h1

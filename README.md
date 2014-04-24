@@ -1,9 +1,9 @@
-# button
+# type
 
-Default button styles.
+Default typography styles.
 
 ## Usage
 
 ```stylus
-@require 'button'
+@require 'type'
 ```
