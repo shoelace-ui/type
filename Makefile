@@ -10,8 +10,9 @@ test: dist/type.css
 
 clean:
 	rm -rf node_modules/
+	rm dist/type.css
 
 dist/type.css: index.styl
 	$(STYLUS) < $^ > $@
 
-.PHONY: test clean
+.PHONY: test clean dist/type.css
