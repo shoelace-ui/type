@@ -13,6 +13,8 @@ clean:
 	rm dist/type.css
 
 dist/type.css: index.styl
-	$(STYLUS) < $^ > $@
+	$(STYLUS) \
+	--include node_modules \
+	< $^ > $@
 
 .PHONY: test clean dist/type.css

@@ -1,6 +1,6 @@
 {
-  "name": "type",
-  "version": "0.0.1",
+  "name": "shoelace-ui-type",
+  "version": "0.0.2",
   "description": "Default typography styles",
   "repository": "https://github.com/shoelace-ui/type.git",
   "keywords": [
@@ -17,5 +17,12 @@
     "stylus": "^0.44.0"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "shoelace-ui-blockquote": "git+https://github.com/shoelace-ui/blockquote.git",
+    "shoelace-ui-font": "git+https://github.com/shoelace-ui/font.git",
+    "shoelace-ui-font-family": "git+https://github.com/shoelace-ui/font-family.git",
+    "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
+    "shoelace-ui-headings": "git+https://github.com/shoelace-ui/headings.git",
+    "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git"
+}
 }
